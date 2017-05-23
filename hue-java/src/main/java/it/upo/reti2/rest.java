@@ -35,9 +35,12 @@ public class rest {
         // init
         Map<String, ?> response = new HashMap<>();
 
+        //per fare le chiamate
         CloseableHttpClient httpclient = HttpClients.createDefault();
+        //per fare la get
         HttpGet request = new HttpGet(URL);
 
+        //risposta della get
         CloseableHttpResponse result = null;
 
         try {
